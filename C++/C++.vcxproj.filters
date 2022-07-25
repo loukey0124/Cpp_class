@@ -13,5 +13,25 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="소스 파일\ch1">
+      <UniqueIdentifier>{dfc5c91c-272b-41d8-80ae-4314efc288c3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ch1_4_new_delete.cpp">
+      <Filter>소스 파일\ch1</Filter>
+    </ClCompile>
+    <ClCompile Include="ch1_3_bool.cpp">
+      <Filter>소스 파일\ch1</Filter>
+    </ClCompile>
+    <ClCompile Include="ch1_2_cpp_io.cpp">
+      <Filter>소스 파일\ch1</Filter>
+    </ClCompile>
+    <ClCompile Include="ch1_5_overloading.cpp">
+      <Filter>소스 파일\ch1</Filter>
+    </ClCompile>
+    <ClCompile Include="ch1_6_defalt_value.cpp">
+      <Filter>소스 파일\ch1</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
