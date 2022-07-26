@@ -127,11 +127,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Card.cpp" />
     <ClCompile Include="ch1_5_overloading.cpp" />
     <ClCompile Include="ch1_2_cpp_io.cpp" />
     <ClCompile Include="ch1_3_bool.cpp" />
     <ClCompile Include="ch1_4_new_delete.cpp" />
     <ClCompile Include="ch1_6_defalt_value.cpp" />
+    <ClCompile Include="ch1_7_inline.cpp" />
+    <ClCompile Include="ch1_8_namespace.cpp" />
+    <ClCompile Include="ch1_9_referance.cpp" />
+    <ClCompile Include="MyCar.cpp" />
+    <ClCompile Include="MyTv.cpp" />
+    <ClCompile Include="Student.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

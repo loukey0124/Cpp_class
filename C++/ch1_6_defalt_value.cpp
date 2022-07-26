@@ -62,8 +62,3 @@ void BoxVoulme_main2()
 	cout << "[7, D, D]:" << BoxVolume2(7) << endl;
 	//cout << "[D, D, D]:" << BoxVolume() << endl;//ERROR
 }
-
-void main()
-{
-	BoxVoulme_main();
-}
