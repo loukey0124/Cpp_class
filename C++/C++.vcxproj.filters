@@ -19,9 +19,6 @@
     <Filter Include="소스 파일\ch2">
       <UniqueIdentifier>{3661246f-bd13-4ec0-b66c-766bdba37794}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\ch2\1.basic">
-      <UniqueIdentifier>{f50dfd2f-93ce-4a78-b45a-885ed766c2c0}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ch1_4_new_delete.cpp">
@@ -48,17 +45,29 @@
     <ClCompile Include="ch1_9_referance.cpp">
       <Filter>소스 파일\ch1</Filter>
     </ClCompile>
-    <ClCompile Include="MyTv.cpp">
-      <Filter>소스 파일\ch2\1.basic</Filter>
-    </ClCompile>
-    <ClCompile Include="Student.cpp">
-      <Filter>소스 파일\ch2\1.basic</Filter>
-    </ClCompile>
     <ClCompile Include="Card.cpp">
-      <Filter>소스 파일\ch2\1.basic</Filter>
+      <Filter>소스 파일\ch2</Filter>
     </ClCompile>
     <ClCompile Include="MyCar.cpp">
-      <Filter>소스 파일\ch2\1.basic</Filter>
+      <Filter>소스 파일\ch2</Filter>
+    </ClCompile>
+    <ClCompile Include="MyTv.cpp">
+      <Filter>소스 파일\ch2</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleClass2.cpp">
+      <Filter>소스 파일\ch2</Filter>
+    </ClCompile>
+    <ClCompile Include="Student.cpp">
+      <Filter>소스 파일\ch2</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleClass.cpp">
+      <Filter>소스 파일\ch2</Filter>
+    </ClCompile>
+    <ClCompile Include="Seller.cpp">
+      <Filter>소스 파일\ch2</Filter>
+    </ClCompile>
+    <ClCompile Include="Person.cpp">
+      <Filter>소스 파일\ch2</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

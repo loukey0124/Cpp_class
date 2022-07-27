@@ -2,12 +2,37 @@
 using namespace std;
 
 class Card {
-public:
+private:
 	char Shape[30];
 	int number;
 
+public:
+
+	Card(const char* Shape, int number) {
+		strcpy_s(this->Shape, 30, Shape);
+		this->number = number;
+	}
+
 	void printCard() {
 		cout << Shape << ", " << number << endl;
+	}
+
+	void setShape(const char* Shape) {
+		strcpy_s(this->Shape, 30, Shape);
+	}
+
+	void setnumber(int number) {
+		this->number = number;
+	}
+
+	char* getShape()
+	{
+		return Shape;
+	}
+
+	int getnumber()
+	{
+		return number;
 	}
 };
 

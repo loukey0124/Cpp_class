@@ -2,13 +2,32 @@
 using namespace std;
 
 class Student {
-public:
+private:
 	char name[30];
 	int ban;
 	int no;
 	int kor;
 	int eng;
 	int math;
+
+public:
+	Student(const char* name, int ban, int no) {
+		strcpy_s(this->name, 30, name);
+		this->ban = ban;
+		this->no = no;
+		kor = -1;
+		eng = -1;
+		math = -1;
+	}
+
+	Student(const char* name, int ban, int no, int kor, int eng, int math) {
+		strcpy_s(this->name, 30, name);
+		this->ban = ban;
+		this->no = no;
+		this->kor = kor;
+		this->eng = eng;
+		this->math = math;
+	}
 
 	int getTotal() {
 		int total = 0;
@@ -23,7 +42,55 @@ public:
 		total += kor;
 		total += eng;
 		total += math;
-		return total / 3.0;
+		return (double)total / 3;
+	}
+
+	void setname(const char* name) {
+		strcpy_s(this->name, 30, name);
+	}
+
+	void setban(int ban) {
+		this->ban = ban;
+	}
+
+	void setno(int no) {
+		this->no = no;
+	}
+
+	void setkor(int kor) {
+		this->kor = kor;
+	}
+
+	void seteng(int eng) {
+		this->eng = eng;
+	}
+
+	void setmath(int math) {
+		this->math = math;
+	}
+
+	char* getname() {
+		return name;
+	}
+
+	int getban() {
+		return ban;
+	}
+
+	int getno() {
+		return no;
+	}
+
+	int getkor() {
+		return kor;
+	}
+
+	int geteng() {
+		return eng;
+	}
+
+	int getmath() {
+		return math;
 	}
 };
 
