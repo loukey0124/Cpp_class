@@ -19,6 +19,9 @@
     <Filter Include="소스 파일\ch2">
       <UniqueIdentifier>{3661246f-bd13-4ec0-b66c-766bdba37794}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\ch3">
+      <UniqueIdentifier>{c6207232-333d-4c65-9526-1baee82f32c5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ch1_4_new_delete.cpp">
@@ -68,6 +71,15 @@
     </ClCompile>
     <ClCompile Include="Person.cpp">
       <Filter>소스 파일\ch2</Filter>
+    </ClCompile>
+    <ClCompile Include="ch3.1.cpp">
+      <Filter>소스 파일\ch3</Filter>
+    </ClCompile>
+    <ClCompile Include="Student_class.cpp">
+      <Filter>소스 파일\ch3</Filter>
+    </ClCompile>
+    <ClCompile Include="quiz3.cpp">
+      <Filter>소스 파일\ch3</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

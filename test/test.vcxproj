@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{202ecdc4-e45a-478f-a65a-6865f37b3360}</ProjectGuid>
-    <RootNamespace>C</RootNamespace>
+    <ProjectGuid>{fce27aaf-49fd-4df0-aafa-f96d1acb2ff0}</ProjectGuid>
+    <RootNamespace>test</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,25 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Card.cpp" />
-    <ClCompile Include="ch1_5_overloading.cpp" />
-    <ClCompile Include="ch1_2_cpp_io.cpp" />
-    <ClCompile Include="ch1_3_bool.cpp" />
-    <ClCompile Include="ch1_4_new_delete.cpp" />
-    <ClCompile Include="ch1_6_defalt_value.cpp" />
-    <ClCompile Include="ch1_7_inline.cpp" />
-    <ClCompile Include="ch1_8_namespace.cpp" />
-    <ClCompile Include="ch1_9_referance.cpp" />
-    <ClCompile Include="ch3.1.cpp" />
-    <ClCompile Include="MyCar.cpp" />
-    <ClCompile Include="MyTv.cpp" />
-    <ClCompile Include="Person.cpp" />
-    <ClCompile Include="quiz3.cpp" />
-    <ClCompile Include="Seller.cpp" />
-    <ClCompile Include="SimpleClass2.cpp" />
-    <ClCompile Include="Student.cpp" />
-    <ClCompile Include="SimpleClass.cpp" />
-    <ClCompile Include="Student_class.cpp" />
+    <ClCompile Include="소스.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

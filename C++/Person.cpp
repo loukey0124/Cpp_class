@@ -21,10 +21,10 @@ public:
 	}
 };
 
-int main()
-{
-	Person p1("kim", 19);
-	p1.ShowPersonInfo();
-
-	return 0;
-}
+//int main()
+//{
+//	Person p1("kim", 19);
+//	p1.ShowPersonInfo();
+//
+//	return 0;
+//}

@@ -147,3 +147,135 @@ void PntAdder_main()
 	delete p2;
 	delete& p3;
 }
+
+void func1_9_2_1() {
+	char c1 = 'A';
+	char& ref1 = c1;
+	char& ref2 = c1;
+
+	cout << c1 << endl;
+	cout << ref1 << endl;
+
+	ref2++;
+
+	cout << c1 << endl;
+	cout << ref1 << endl;
+}
+
+void func1_9_2_2() {
+	double d = 3.1;
+	double& ref = d;
+
+	cout << d << endl;
+	cout << ref << endl;
+
+	cout << &d << endl;
+	cout << &ref << endl;
+}
+
+void increVal(int& val) {
+	val++;
+}
+
+void convVal(int& val) {
+	val = -val;
+}
+
+void test_incre_conv() {
+	int num = 1;
+
+	increVal(num);
+	cout << num << endl;
+
+	convVal(num);
+	cout << num << endl;
+}
+
+void swap(int& n1, int& n2) {
+	int temp = n1;
+	n1 = n2;
+	n2 = temp;
+}
+
+void test_swap() {
+	int n1 = 10, n2 = 30;
+
+	cout << "BEFORE:" << n1 << ", " << n2 << endl;
+	swap(n1, n2);
+	cout << "AFTER:" << n1 << ", " << n2 << endl;
+}
+
+typedef struct {
+	char name[100];
+	int kor;
+	int eng;
+}STUDENT;
+
+void setStudent(STUDENT& s, char* name, int kor, int eng) {
+	strcpy_s(s.name, 100, name);
+	s.kor = kor;
+	s.eng = eng;
+}
+
+void test_setStudent() {
+	STUDENT s;
+	char name[100];
+	int k, e;
+	cout << "이름 입력:";
+	cin >> name;
+	cout << "국어 점수 입력:";
+	cin >> k;
+	cout << "영어 점수 입력:";
+	cin >> e;
+
+	setStudent(s, name, k, e);
+
+	cout << "이름:" << s.name << " 국어:" << s.kor << " 영어:" << s.eng << endl;
+}
+
+typedef struct {
+	char Shape[100];
+	int number;
+}CARD;
+
+void setcard(CARD& c, const char* name, int num) {
+	strcpy_s(c.Shape, 100, name);
+	c.number = num;
+}
+
+void testsetcard() {
+	CARD card;
+	setcard(card, "Diamond", 10);
+	cout << "모양:" << card.Shape << " 번호:" << card.number << endl;
+}
+
+class Tv {
+private:
+	int volumn;
+	int channel;
+
+public:
+	void setChannel(int c) {
+		channel = c;
+	}
+
+	void setVolumn(int v) {
+		volumn = v;
+	}
+
+	void showInfo() {
+		cout << channel << ", " << volumn << endl;
+	}
+};
+
+void setTv(Tv& t, int c, int v) {
+	t.setChannel(c);
+	t.setVolumn(v);
+}
+
+void testsetTv() {
+	Tv tv;
+
+	setTv(tv, 10, 5);
+	tv.showInfo();
+}
